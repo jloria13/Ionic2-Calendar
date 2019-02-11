@@ -276,7 +276,7 @@ export class MonthViewComponent implements ICalendarComponent, OnInit, OnChanges
         if (this.dateFormatter && this.dateFormatter.formatMonthViewDay) {
             this.formatDayLabel = this.dateFormatter.formatMonthViewDay;
         } else {
-            var dayLabelDatePipe = new DatePipe('en-US');
+            var dayLabelDatePipe = new DatePipe('es-CR');
             this.formatDayLabel = function (date:Date) {
                 return dayLabelDatePipe.transform(date, this.formatDay);
             };
